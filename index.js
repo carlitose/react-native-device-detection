@@ -23,7 +23,8 @@ class DetectDeviceService {
     if(this.pixelDensity < 2 && (this.adjustedWidth >= 1000 || this.adjustedHeight >= 1000)) {
       this.isTablet = true;
       this.isPhone = false;
-    } else if(this.pixelDensity === 2 && (this.adjustedWidth >= 1920 || this.adjustedHeight >= 1920)) {
+    } else if(this.pixelDensity === 2 && (this.adjustedWidth >= 1200 || this.adjustedHeight >= 1920)) {
+	    //} else if(this.pixelDensity === 2 && (this.adjustedWidth >= 1920 || this.adjustedHeight >= 1920)) {
       this.isTablet = true;
       this.isPhone = false;
     } else {
